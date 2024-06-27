@@ -11,7 +11,7 @@ function forecast(long,lat,  callback){
             callback("Unable to find location. Try another search.", undefined);           
         }else{
             const data = body.current;
-            callback(undefined, data.weather_descriptions[0]+ ". It is currently "+ data.temperature + " degress out. It feels like "+data.feelslike+" degress out. The humiidity is "+ data.humidity+"%. The cloudcover is "+ data.cloudcover+"%.");
+            callback(undefined, data.weather_descriptions[0]+ ". It is currently "+ data.temperature + " degress out. It feels like "+data.feelslike+" degress out. The humidity is "+ data.humidity+"%. The cloud cover is "+ data.cloudcover+"%.");
         }        
     })
 }
